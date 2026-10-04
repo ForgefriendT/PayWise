@@ -1,0 +1,5 @@
+package com.paywise.paywise
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
