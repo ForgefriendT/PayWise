@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import '../data/app_provider.dart';
 import '../features/auth/login_screen.dart';
 import '../features/bills/bills_screen.dart';
+import '../features/bills/credit_card_bill_screen.dart';
 import '../features/history/history_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/home/nav_shell.dart';
@@ -81,6 +82,11 @@ GoRouter createRouter(AppProvider provider) {
         path: '/bills',
         parentNavigatorKey: _rootNavigatorKey,
         builder: (context, state) => const BillsScreen(),
+      ),
+      GoRoute(
+        path: '/credit-card-bill',
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const CreditCardBillScreen(),
       ),
     ],
   );
