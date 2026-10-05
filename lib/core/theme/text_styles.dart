@@ -28,6 +28,12 @@ class AppTextStyles {
     color: AppColors.textPrimary,
   );
 
+  static TextStyle bodyBold = GoogleFonts.plusJakartaSans(
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textPrimary,
+  );
+
   static TextStyle caption = GoogleFonts.plusJakartaSans(
     fontSize: 12,
     fontWeight: FontWeight.w400,

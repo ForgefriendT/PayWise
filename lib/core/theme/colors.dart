@@ -5,6 +5,7 @@ class AppColors {
   static const Color brand = Color(0xFF5F259F);
   static const Color brandDark = Color(0xFF3F1670);
   static const Color brandSoft = Color(0xFFF1E9FA);
+  static const Color brandTint = Color(0xFFF1E9FA);
 
   static const Color success = Color(0xFF1E9E5A);
   static const Color warning = Color(0xFFE8A317);

@@ -5,6 +5,7 @@ import '../../core/theme/text_styles.dart';
 import '../../core/widgets/app_icon.dart';
 import '../../core/widgets/primary_button.dart';
 import '../../data/app_provider.dart';
+import 'login_footer.dart';
 import 'login_header.dart';
 
 // Login screen matching Stitch Screen 01 design with email and demo anonymous auth
@@ -25,8 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Future<void> _handleDemoLogin() async {
     setState(() { _loading = true; _error = null; });
     try {
-      final auth = context.read<AppProvider>().authService;
-      await auth.signInAnonymously();
+      await context.read<AppProvider>().authService.signInAnonymously();
     } catch (e) {
       if (mounted) setState(() => _error = 'Demo sign-in failed. Please try again.');
     } finally {
@@ -64,14 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 390),
-              child: Column(
-                children: [
-                  const LoginHeader(),
-                  _buildFormCard(),
-                  const SizedBox(height: 24),
-                  _buildFooter(),
-                ],
-              ),
+              child: Column(children: [const LoginHeader(), _buildFormCard(), const SizedBox(height: 24), const LoginFooter()]),
             ),
           ),
         ),
@@ -82,19 +75,11 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildFormCard() {
     return Container(
       padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: AppColors.surface,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppColors.divider),
-      ),
+      decoration: BoxDecoration(color: AppColors.surface, borderRadius: BorderRadius.circular(16), border: Border.all(color: AppColors.divider)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (_error != null)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: Text(_error!, style: AppTextStyles.caption.copyWith(color: AppColors.danger)),
-            ),
+          if (_error != null) Padding(padding: const EdgeInsets.only(bottom: 12), child: Text(_error!, style: AppTextStyles.caption.copyWith(color: AppColors.danger))),
           Text('Email address', style: AppTextStyles.caption.copyWith(fontWeight: FontWeight.w600)),
           const SizedBox(height: 6),
           TextField(
@@ -143,56 +128,8 @@ class _LoginScreenState extends State<LoginScreen> {
             icon: const AppIcon('flash', size: 18, color: AppColors.brand),
             onPressed: _handleDemoLogin,
           ),
-          const SizedBox(height: 16),
-          Container(
-            padding: const EdgeInsets.all(10),
-            decoration: BoxDecoration(color: AppColors.background, borderRadius: BorderRadius.circular(10)),
-            child: Row(
-              children: [
-                const AppIcon('shield', size: 20, color: AppColors.brand),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('PayPause Protection', style: AppTextStyles.caption.copyWith(fontWeight: FontWeight.w700, color: AppColors.textPrimary)),
-                      Text('5-second rethink buffer on impulsive payments.', style: AppTextStyles.caption.copyWith(fontSize: 11)),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
         ],
       ),
-    );
-  }
-
-  Widget _buildFooter() {
-    return Column(
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const AppIcon('alert', size: 14, color: AppColors.textSecondary),
-            const SizedBox(width: 6),
-            Flexible(
-              child: Text(
-                'Demo mode - simulated fintech platform',
-                style: AppTextStyles.caption,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 8),
-        Text(
-          'Privacy Protocol • Security Audited • v2.4.0',
-          style: AppTextStyles.caption.copyWith(fontSize: 11, color: AppColors.textSecondary),
-        ),
-        const SizedBox(height: 16),
-      ],
     );
   }
 }

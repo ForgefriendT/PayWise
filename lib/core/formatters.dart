@@ -33,4 +33,9 @@ class AppFormatters {
   static String formatTime(DateTime date) {
     return DateFormat('hh:mm a').format(date);
   }
+
+  // Formats timestamps into strings like 24 Oct, 6:40 PM
+  static String formatDateTime(DateTime date) {
+    return DateFormat('dd MMM, hh:mm a').format(date);
+  }
 }
