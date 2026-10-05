@@ -9,4 +9,8 @@ This log lists each tool installed and the command used to install it.
 - Initialized Flutter project: `flutter create --org com.paywise --project-name paywise --platforms=android,ios,web .`
 - Initialized Git repository: `git init`
 - Added approved packages: `flutter pub add firebase_core firebase_auth cloud_firestore provider go_router flutter_svg fl_chart flutter_animate google_fonts intl mobile_scanner`
-- Verified Stitch API connection via JSON-RPC endpoint with configured key
+- Configured Firebase options for Android and Web: `flutterfire configure --project=paywise-ae977 --platforms=android,web -y`
+- Deployed Firestore security rules and initialized database: `firebase deploy --only firestore:rules`
+- Deployed web application to Firebase Hosting: `firebase deploy --only hosting`
+- Pushed initial project setup to GitHub repository: `git push -u origin main`
+

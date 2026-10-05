@@ -81,9 +81,9 @@ flutter run -d chrome
 ```
 
 ## Links
-- **GitHub Repository**: Pending push
+- **GitHub Repository**: https://github.com/ForgefriendT/PayWise
 - **Figma Design**: Pending export
-- **Live Web App**: Pending deployment
+- **Live Web App**: https://paywise-ae977.web.app
 
 ## Icon Attribution
 Icons are based on open-source Lucide/Tabler icon sets under MIT license.

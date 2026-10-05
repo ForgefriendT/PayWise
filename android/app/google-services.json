@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "335620844073",
+    "project_id": "paywise-ae977",
+    "storage_bucket": "paywise-ae977.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335620844073:android:0433ee548186f598070a38",
+        "android_client_info": {
+          "package_name": "com.paywise.paywise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMY7au4_vb9JUAt9_59CrYOGCTsjLTdEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
