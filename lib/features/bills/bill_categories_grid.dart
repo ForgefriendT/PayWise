@@ -29,9 +29,9 @@ class BillCategoriesGrid extends StatelessWidget {
           padding: EdgeInsets.zero,
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
-            mainAxisSpacing: 10,
-            crossAxisSpacing: 10,
-            childAspectRatio: 1.05,
+            mainAxisSpacing: 8,
+            crossAxisSpacing: 8,
+            childAspectRatio: 1.2,
           ),
           itemCount: services.length,
           itemBuilder: (context, i) {
@@ -45,6 +45,14 @@ class BillCategoriesGrid extends StatelessWidget {
             Expanded(child: _buildQuickPill(context, 'FASTag Recharge', 'Instant', 'car', null)),
             const SizedBox(width: 8),
             Expanded(child: _buildQuickPill(context, 'Credit Card', 'New', 'card', () => context.push('/credit-card-bill'))),
+          ],
+        ),
+        const SizedBox(height: 8),
+        Row(
+          children: [
+            Expanded(child: _buildQuickPill(context, 'Insurance', 'IRDAI', 'shield', () => context.push('/insurance'))),
+            const SizedBox(width: 8),
+            Expanded(child: _buildQuickPill(context, 'Loans & Credit', 'Pre-approved', 'loan', () => context.push('/lending'))),
           ],
         ),
       ],

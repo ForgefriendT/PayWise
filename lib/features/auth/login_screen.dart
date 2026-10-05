@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../core/theme/colors.dart';
@@ -28,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
     try {
       await context.read<AppProvider>().authService.signInAnonymously();
     } catch (e) {
-      if (mounted) setState(() => _error = 'Demo sign-in failed. Please try again.');
+      if (mounted) setState(() => _error = 'Demo sign-in failed. Please check network.');
     } finally {
       if (mounted) setState(() => _loading = false);
     }
@@ -43,12 +44,16 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() { _loading = true; _error = null; });
     try {
       await auth.signInWithEmail(email, pass);
-    } catch (e) {
-      try {
-        await auth.registerWithEmail(email, pass);
-      } catch (_) {
-        if (mounted) setState(() => _error = 'Invalid credentials or network issue.');
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found' || e.code == 'invalid-credential' || e.code == 'INVALID_LOGIN_CREDENTIALS') {
+        try {
+          await auth.registerWithEmail(email, pass);
+          return;
+        } catch (_) {}
       }
+      if (mounted) setState(() => _error = e.message ?? 'Sign-in failed. Try "Continue as demo user".');
+    } catch (_) {
+      if (mounted) setState(() => _error = 'Sign-in failed. Try "Continue as demo user".');
     } finally {
       if (mounted) setState(() => _loading = false);
     }

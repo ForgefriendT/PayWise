@@ -10,6 +10,8 @@ import '../features/home/nav_shell.dart';
 import '../features/pay/contacts_screen.dart';
 import '../features/pay/pay_screen.dart';
 import '../features/pay/scan_screen.dart';
+import '../features/insurance/insurance_screen.dart';
+import '../features/lending/lending_screen.dart';
 import '../features/wallet/rewards_screen.dart';
 import '../features/wealth/digital_gold_screen.dart';
 import '../features/wealth/wealth_screen.dart';
@@ -93,6 +95,21 @@ GoRouter createRouter(AppProvider provider) {
         path: '/gold',
         parentNavigatorKey: _rootNavigatorKey,
         builder: (context, state) => const DigitalGoldScreen(),
+      ),
+      GoRoute(
+        path: '/insurance',
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const InsuranceScreen(),
+      ),
+      GoRoute(
+        path: '/lending',
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const LendingScreen(),
+      ),
+      GoRoute(
+        path: '/wallet',
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const RewardsScreen(),
       ),
     ],
   );
