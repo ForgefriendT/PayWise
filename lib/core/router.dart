@@ -11,6 +11,7 @@ import '../features/pay/contacts_screen.dart';
 import '../features/pay/pay_screen.dart';
 import '../features/pay/scan_screen.dart';
 import '../features/wallet/rewards_screen.dart';
+import '../features/wealth/digital_gold_screen.dart';
 import '../features/wealth/wealth_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -87,6 +88,11 @@ GoRouter createRouter(AppProvider provider) {
         path: '/credit-card-bill',
         parentNavigatorKey: _rootNavigatorKey,
         builder: (context, state) => const CreditCardBillScreen(),
+      ),
+      GoRoute(
+        path: '/gold',
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const DigitalGoldScreen(),
       ),
     ],
   );
