@@ -12,5 +12,7 @@ This log lists each tool installed and the command used to install it.
 - Configured Firebase options for Android and Web: `flutterfire configure --project=paywise-ae977 --platforms=android,web -y`
 - Deployed Firestore security rules and initialized database: `firebase deploy --only firestore:rules`
 - Deployed web application to Firebase Hosting: `firebase deploy --only hosting`
-- Pushed initial project setup to GitHub repository: `git push -u origin main`
+- Implemented Firestore data models, FirestoreService gateway, and AuthService
+- Created Stitch-matched LoginScreen with demo anonymous sign-in and procedural demo seeding
+- Pushed M2 milestone to GitHub repository: `git push origin main`
 
