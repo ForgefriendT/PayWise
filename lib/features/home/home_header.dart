@@ -26,54 +26,29 @@ class HomeHeader extends StatelessWidget {
               Text('Welcome back', style: AppTextStyles.caption),
             ],
           ),
-          Row(
-            children: [
-              GestureDetector(
-                onTap: () => context.push('/rewards'),
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: AppColors.surface,
-                    borderRadius: BorderRadius.circular(999),
-                    border: Border.all(color: AppColors.divider),
-                  ),
-                  child: Row(
-                    children: [
-                      const AppIcon('wallet', size: 16, color: AppColors.brand),
-                      const SizedBox(width: 6),
-                      Text(
-                        AppFormatters.formatRupee(walletBalance),
-                        style: AppTextStyles.caption.copyWith(fontWeight: FontWeight.w700, color: AppColors.textPrimary),
-                      ),
-                    ],
-                  ),
-                ),
+          GestureDetector(
+            onTap: () => context.push('/rewards'),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              decoration: BoxDecoration(
+                color: AppColors.surface,
+                borderRadius: BorderRadius.circular(999),
+                border: Border.all(color: AppColors.divider),
+                boxShadow: const [
+                  BoxShadow(color: Color(0x0A000000), blurRadius: 4, offset: Offset(0, 1)),
+                ],
               ),
-              const SizedBox(width: 8),
-              Container(
-                width: 36,
-                height: 36,
-                decoration: BoxDecoration(
-                  color: AppColors.surface,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.divider),
-                ),
-                child: const Center(child: AppIcon('bell', size: 18, color: AppColors.textPrimary)),
-              ),
-              const SizedBox(width: 8),
-              GestureDetector(
-                onTap: () => context.push('/profile'),
-                child: Container(
-                  width: 36,
-                  height: 36,
-                  decoration: const BoxDecoration(
-                    color: AppColors.brand,
-                    shape: BoxShape.circle,
+              child: Row(
+                children: [
+                  const AppIcon('wallet', size: 18, color: AppColors.brand),
+                  const SizedBox(width: 6),
+                  Text(
+                    AppFormatters.formatRupee(walletBalance),
+                    style: AppTextStyles.bodyBold.copyWith(fontSize: 14, color: AppColors.textPrimary),
                   ),
-                  child: const Center(child: AppIcon('user', size: 18, color: Colors.white)),
-                ),
+                ],
               ),
-            ],
+            ),
           ),
         ],
       ),

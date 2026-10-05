@@ -26,13 +26,7 @@ class ProfileScreen extends StatelessWidget {
       backgroundColor: AppColors.background,
       appBar: AppBar(
         leading: IconButton(icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary), onPressed: () => Navigator.pop(context)),
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('SCREEN 18: PROFILE & CONTROLS', style: AppTextStyles.caption.copyWith(fontSize: 10, letterSpacing: 1.2, fontWeight: FontWeight.w700)),
-            Text('Profile & Settings', style: AppTextStyles.title.copyWith(fontSize: 18)),
-          ],
-        ),
+        title: Text('Profile & Settings', style: AppTextStyles.title.copyWith(fontSize: 18)),
         backgroundColor: AppColors.surface,
         elevation: 0,
       ),
