@@ -12,6 +12,7 @@ import '../features/pay/pay_screen.dart';
 import '../features/pay/scan_screen.dart';
 import '../features/insurance/insurance_screen.dart';
 import '../features/lending/lending_screen.dart';
+import '../features/profile/profile_screen.dart';
 import '../features/wallet/rewards_screen.dart';
 import '../features/wealth/digital_gold_screen.dart';
 import '../features/wealth/wealth_screen.dart';
@@ -110,6 +111,11 @@ GoRouter createRouter(AppProvider provider) {
         path: '/wallet',
         parentNavigatorKey: _rootNavigatorKey,
         builder: (context, state) => const RewardsScreen(),
+      ),
+      GoRoute(
+        path: '/profile',
+        parentNavigatorKey: _rootNavigatorKey,
+        builder: (context, state) => const ProfileScreen(),
       ),
     ],
   );

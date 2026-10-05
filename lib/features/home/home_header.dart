@@ -60,6 +60,19 @@ class HomeHeader extends StatelessWidget {
                 ),
                 child: const Center(child: AppIcon('bell', size: 18, color: AppColors.textPrimary)),
               ),
+              const SizedBox(width: 8),
+              GestureDetector(
+                onTap: () => context.push('/profile'),
+                child: Container(
+                  width: 36,
+                  height: 36,
+                  decoration: const BoxDecoration(
+                    color: AppColors.brand,
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Center(child: AppIcon('user', size: 18, color: Colors.white)),
+                ),
+              ),
             ],
           ),
         ],
