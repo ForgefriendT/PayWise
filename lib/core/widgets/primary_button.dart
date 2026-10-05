@@ -42,6 +42,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
         duration: const Duration(milliseconds: 100),
         child: Container(
           height: 52,
+          padding: const EdgeInsets.symmetric(horizontal: 12),
           decoration: BoxDecoration(
             color: enabled ? widget.backgroundColor : AppColors.divider,
             borderRadius: BorderRadius.circular(12),
@@ -58,16 +59,21 @@ class _PrimaryButtonState extends State<PrimaryButton> {
                 )
               : Row(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     if (widget.icon != null) ...[
                       widget.icon!,
                       const SizedBox(width: 8),
                     ],
-                    Text(
-                      widget.label,
-                      style: AppTextStyles.heading.copyWith(
-                        color: enabled ? widget.textColor : AppColors.textSecondary,
-                        fontSize: 16,
+                    Flexible(
+                      child: Text(
+                        widget.label,
+                        style: AppTextStyles.heading.copyWith(
+                          color: enabled ? widget.textColor : AppColors.textSecondary,
+                          fontSize: 15,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
                   ],

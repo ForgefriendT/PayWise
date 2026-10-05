@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#ffffff", "category-health": "#E63946", "on-primary-container": "#cda3ff", "on-tertiary-container": "#b9b3c3", "on-tertiary-fixed-variant": "#494552", "text-primary": "#1B1530", "background": "#faf9fe", "text-secondary": "#6B6780", "inverse-on-surface": "#f1f0f5", "on-surface-variant": "#4b4452", "category-grocery": "#2A9D8F", "on-primary-fixed-variant": "#5f259f", "semantic-warning": "#E8A317", "surface-container-high": "#e8e7ec", "on-tertiary": "#ffffff", "semantic-success": "#1E9E5A", "on-primary-fixed": "#2a0053", "surface-dim": "#dad9de", "secondary": "#714ba4", "surface-tint": "#7841b9", "surface-container-low": "#f4f3f8", "inverse-surface": "#2f3034", "semantic-danger": "#D64545", "secondary-container": "#c79efd", "surface-container-highest": "#e3e2e7", "category-shopping": "#E83D84", "surface-bright": "#faf9fe", "error": "#ba1a1a", "on-primary": "#ffffff", "category-travel": "#0096C7", "on-error": "#ffffff", "tertiary-fixed": "#e7dff0", "category-transfers": "#457B9D", "surface-variant": "#e3e2e7", "on-background": "#1a1c1f", "surface": "#FFFFFF", "divider": "#ECE9F3", "on-tertiary-fixed": "#1d1a25", "primary-container": "#5f259f", "primary-fixed-dim": "#dab9ff", "outline": "#7c7483", "category-bills": "#F77F00", "on-surface": "#1a1c1f", "category-entertainment": "#7B2CBF", "category-food": "#FF6B00", "on-secondary-fixed-variant": "#58328a", "inverse-primary": "#dab9ff", "primary": "#470085", "on-secondary-fixed": "#290055", "surface-container": "#eeedf2", "on-error-container": "#93000a", "semantic-info": "#2F6FDE", "tertiary": "#332f3b", "primary-fixed": "#eedbff", "tertiary-container": "#494552", "surface-container-lowest": "#ffffff", "secondary-fixed": "#eddcff", "outline-variant": "#cdc3d4", "tertiary-fixed-dim": "#cbc4d4", "secondary-fixed-dim": "#d8b9ff", "on-secondary-container": "#552f86", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1rem", "margin": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-xl": "1.5rem", "margin-screen": "1.25rem", "gutter-compact": "0.75rem", "gutter": "1rem" }, fontFamily: { "label-sm": ["Plus Jakarta Sans"], "body-md-bold": ["Plus Jakarta Sans"], "caption-xs": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "currency-display": ["Plus Jakarta Sans"], "heading-md": ["Plus Jakarta Sans"], "caption-xs-bold": ["Plus Jakarta Sans"], "currency-keypad": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "500" }], "body-md-bold": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600" }], "caption-xs": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "currency-display": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "heading-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "caption-xs-bold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "currency-keypad": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }], "title-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "display-hero-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-text-primary flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,21,48,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs flex items-center justify-center text-text-primary hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #5f259f
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain hidden xs:block" src="https://lh3.googleusercontent.com/aida/AEtjO1VJCUBtaD0XCaoPY3DH08-L7KzFwMX04-pVZq4aHoMGWXd_gFFY-ClLZPkgd8Fjd0CpF-8l3x5R2hwlQsdtXBM90qAZ83N-7TcaHF03fnlYzoTjT28O3Dv0sS3Y7hbS4cS93r-OouLSoOo-m0SWPtrtSiu-HZPS_wrd7RmPoD8E4cf0SNQ6pMxeZYDum2ZdT8mHd2xFlfdZJOWa3f7k-CYSWN4mZWC9Fr7j8YDDynhnLoHSf3GstwidCQ"/><h1 class="font-heading-md text-heading-md text-text-primary truncate max-w-[210px]">Screen 14: Digital Gold Screen</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Screen help" class="w-11 h-11 flex items-center justify-center text-text-secondary hover:text-text-primary rounded-full transition-colors"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-background"><div class="flex flex-col w-full pb-8">
+<!-- Live Gold Rate Ticker & Trust Bar -->
+<section class="px-margin-screen pt-4 pb-2">
+<div class="bg-surface rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-semantic-success opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-semantic-success"></span>
+</span>
+<span class="font-label-sm text-label-sm text-text-secondary">Live 24K Rate</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-semantic-success text-[15px]">trending_up</span>
+<span class="font-caption-xs-bold text-caption-xs-bold text-semantic-success">+0.85% today</span>
+</div>
+</div>
+<div class="mt-space-xs flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-title-lg text-title-lg text-text-primary tracking-tight" id="live-rate-display">₹7,425.50</span>
+<span class="font-caption-xs text-caption-xs text-text-secondary">/ gram</span>
+</div>
+<!-- Sparkline Trend Indicator -->
+<svg class="w-20 h-6 text-semantic-success overflow-visible" fill="none" viewbox="0 0 80 24">
+<path d="M1 19 L16 16 L32 18 L48 11 L62 13 L79 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"></path>
+<circle class="animate-pulse" cx="79" cy="3" fill="currentColor" r="2.5"></circle>
+</svg>
+</div>
+<!-- Trust Credentials -->
+<div class="mt-space-md pt-space-xs bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between text-text-secondary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[17px]">verified</span>
+<span class="font-caption-xs-bold text-caption-xs-bold text-text-primary">24K 99.9% Pure</span>
+</div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">sell</span>
+<span class="font-caption-xs text-caption-xs">0% Making</span>
+</div>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<div class="flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-[15px]">lock</span>
+<span class="font-caption-xs text-caption-xs truncate max-w-[100px]">Augmont Vault</span>
+</div>
+</div>
+</div>
+</section>
+<!-- User Holdings Card (Locker) -->
+<section class="px-margin-screen py-2">
+<div class="bg-gradient-to-br from-primary via-primary-container to-secondary text-on-primary rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<!-- Decorative background watermark rings -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-on-primary/5 pointer-events-none"></div>
+<div class="absolute -right-2 -top-6 w-28 h-28 rounded-full bg-on-primary/5 pointer-events-none"></div>
+<div class="flex items-center justify-between relative z-10">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-on-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">account_balance_wallet</span>
+</div>
+<span class="font-heading-md text-heading-md text-on-primary">Your Gold Locker</span>
+</div>
+<span class="bg-on-primary/15 text-on-primary font-caption-xs-bold text-caption-xs-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Insured
+        </span>
+</div>
+<div class="mt-space-lg grid grid-cols-2 gap-space-md relative z-10">
+<div>
+<span class="font-caption-xs text-caption-xs text-on-primary-container">Current Holdings</span>
+<p class="font-title-lg text-title-lg text-on-primary tracking-tight mt-0.5">2.500 <span class="font-label-sm text-label-sm font-normal text-on-primary-container">gm</span></p>
+</div>
+<div>
+<span class="font-caption-xs text-caption-xs text-on-primary-container">Current Valuation</span>
+<p class="font-title-lg text-title-lg text-on-primary tracking-tight mt-0.5">₹18,563.75</p>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-on-primary/10 rounded-lg p-2.5 flex items-center justify-between relative z-10">
+<div class="flex items-center gap-1.5">
+<span class="font-caption-xs text-caption-xs text-on-primary/80">Total Return</span>
+<span class="font-caption-xs-bold text-caption-xs-bold text-semantic-success bg-surface px-1.5 py-0.5 rounded">+₹1,640 (+9.69%)</span>
+</div>
+<div class="flex items-center gap-1 text-on-primary/80">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span class="font-caption-xs text-caption-xs">Bank-Grade Vault</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Auto-Accumulate (Gold SIP) Banner -->
+<section class="px-margin-screen py-2">
+<div class="bg-surface rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[20px]">autorenew</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md-bold text-body-md-bold text-text-primary">Daily Gold Savings</span>
+<span class="bg-semantic-warning/15 text-semantic-warning font-caption-xs-bold text-caption-xs-bold px-1.5 py-0.2 rounded">SIP</span>
+</div>
+<p class="font-caption-xs text-caption-xs text-text-secondary truncate mt-0.5">From ₹10/day. Discipline without market stress.</p>
+</div>
+<button class="flex-shrink-0 px-3 py-1.5 bg-surface-container text-primary hover:bg-secondary-fixed rounded-lg font-caption-xs-bold text-caption-xs-bold transition-colors">
+        Start SIP
+      </button>
+</div>
+</section>
+<!-- Action Mode Switcher / Buy & Sell Section -->
+<section class="px-margin-screen pt-2">
+<div class="bg-surface rounded-xl p-space-lg shadow-sm">
+<!-- Tab Selector -->
+<div class="grid grid-cols-2 p-1 bg-surface-container rounded-lg gap-1">
+<button class="py-2 rounded font-label-sm text-label-sm bg-surface text-primary font-bold shadow-sm transition-all flex items-center justify-center gap-1.5" id="tab-buy">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+          Buy Gold
+        </button>
+<button class="py-2 rounded font-label-sm text-label-sm text-text-secondary font-medium hover:text-text-primary transition-all flex items-center justify-center gap-1.5" id="tab-sell">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+          Sell to Wallet
+        </button>
+</div>
+<!-- Amount Entry Box -->
+<div class="mt-space-lg flex flex-col items-center bg-surface-container-low rounded-xl py-space-lg px-space-md">
+<span class="font-caption-xs text-caption-xs text-text-secondary" id="entry-helper-label">Enter Purchase Amount</span>
+<div class="flex items-baseline justify-center mt-1">
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary-container font-bold mr-1">₹</span>
+<input class="w-40 bg-transparent text-center font-display-hero-mobile text-display-hero-mobile text-text-primary font-bold outline-none tracking-tight p-0 selection:bg-secondary-fixed" id="amount-input" type="text" value="1,000"/>
+</div>
+<div class="mt-1 flex items-center gap-1 bg-surface px-2.5 py-1 rounded-full text-text-secondary">
+<span class="material-symbols-outlined text-[15px] text-primary">scale</span>
+<span class="font-label-sm text-label-sm text-text-primary font-medium" id="weight-equiv">≈ 0.1346 gm</span>
+</div>
+</div>
+<!-- Quick Amount Chips -->
+<div class="mt-space-md grid grid-cols-4 gap-2" id="chip-group">
+<button class="chip-btn py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container text-text-secondary rounded-lg font-caption-xs-bold text-caption-xs-bold transition-all" data-val="500">
+          ₹500
+        </button>
+<button class="chip-btn py-2 px-1 text-center bg-secondary-fixed text-primary font-bold rounded-lg font-caption-xs-bold text-caption-xs-bold transition-all shadow-sm" data-val="1000">
+          ₹1,000
+        </button>
+<button class="chip-btn py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container text-text-secondary rounded-lg font-caption-xs-bold text-caption-xs-bold transition-all" data-val="5000">
+          ₹5,000
+        </button>
+<button class="chip-btn py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container text-text-secondary rounded-lg font-caption-xs-bold text-caption-xs-bold transition-all" data-val="7426">
+          1 gm (₹7,426)
+        </button>
+</div>
+<!-- Live Lock Timer & Payment Summary -->
+<div class="mt-space-lg bg-surface-container-lowest rounded-lg p-space-md space-y-2">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-1.5 text-text-secondary">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="font-caption-xs text-caption-xs">Live Rate Validity</span>
+</div>
+<span class="font-caption-xs-bold text-caption-xs-bold text-semantic-warning bg-semantic-warning/10 px-2 py-0.5 rounded" id="rate-timer">04:48s lock</span>
+</div>
+<div class="flex items-center justify-between text-text-secondary">
+<span class="font-caption-xs text-caption-xs">Gold Purity Standard</span>
+<span class="font-caption-xs-bold text-caption-xs-bold text-text-primary">24K 99.9% (999)</span>
+</div>
+<div class="flex items-center justify-between text-text-secondary">
+<span class="font-caption-xs text-caption-xs">GST &amp; Mandate Charges (3%)</span>
+<span class="font-caption-xs text-caption-xs text-text-primary" id="gst-val">₹29.13</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-md-bold text-body-md-bold text-text-primary">Net Total Payable</span>
+<span class="font-heading-md text-heading-md text-primary font-bold" id="total-val">₹1,000.00</span>
+</div>
+</div>
+<!-- Action Button -->
+<div class="mt-space-lg space-y-space-sm">
+<button class="w-full h-[52px] bg-primary hover:bg-primary-container text-on-primary rounded-xl font-body-md-bold text-body-md-bold transition-all flex items-center justify-center gap-2 active:scale-[0.98] shadow-sm" id="primary-action-btn">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span id="action-btn-text">Proceed to Buy Gold (₹1,000)</span>
+</button>
+<button class="w-full h-11 bg-transparent hover:bg-surface-container-low text-primary-container rounded-xl font-caption-xs-bold text-caption-xs-bold transition-colors flex items-center justify-center gap-1.5" id="secondary-action-btn">
+<span class="material-symbols-outlined text-[16px]">assured_workload</span>
+<span>Sell Gold to Bank Account Directly</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Security and Vaulting Details Pill Footer -->
+<section class="px-margin-screen pt-4 pb-2 text-center">
+<div class="inline-flex items-center justify-center gap-2 px-3 py-1.5 bg-surface-container rounded-full text-text-secondary">
+<span class="material-symbols-outlined text-[16px] text-text-primary">lock_clock</span>
+<span class="font-caption-xs text-caption-xs">Physical gold safeguarded with IDBI Trusteeship</span>
+</div>
+</section>
+</div>
+<script>
+  (function initDigitalGold() {
+    const ratePerGram = 7425.50;
+    const amountInput = document.getElementById('amount-input');
+    const weightEquiv = document.getElementById('weight-equiv');
+    const gstVal = document.getElementById('gst-val');
+    const totalVal = document.getElementById('total-val');
+    const actionBtnText = document.getElementById('action-btn-text');
+    const chipBtns = document.querySelectorAll('.chip-btn');
+    const tabBuy = document.getElementById('tab-buy');
+    const tabSell = document.getElementById('tab-sell');
+    const timerElement = document.getElementById('rate-timer');
+
+    let currentMode = 'buy'; // 'buy' or 'sell'
+
+    function updateCalculations(val) {
+      const num = parseFloat(val.toString().replace(/,/g, '')) || 0;
+      const weight = (num / ratePerGram).toFixed(4);
+      weightEquiv.textContent = '≈ ' + weight + ' gm';
+      
+      const gst = (num * 0.03 / 1.03).toFixed(2);
+      gstVal.textContent = '₹' + gst;
+      totalVal.textContent = '₹' + num.toLocaleString('en-IN', { minimumFractionDigits: 2 });
+      
+      if (currentMode === 'buy') {
+        actionBtnText.textContent = 'Proceed to Buy Gold (₹' + num.toLocaleString('en-IN') + ')';
+      } else {
+        actionBtnText.textContent = 'Proceed to Sell Gold (' + weight + ' gm)';
+      }
+    }
+
+    // Chip select listeners
+    chipBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        chipBtns.forEach(b => {
+          b.classList.remove('bg-secondary-fixed', 'text-primary', 'shadow-sm');
+          b.classList.add('bg-surface-container-low', 'text-text-secondary');
+        });
+        btn.classList.add('bg-secondary-fixed', 'text-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-low', 'text-text-secondary');
+
+        const val = btn.getAttribute('data-val');
+        amountInput.value = parseInt(val).toLocaleString('en-IN');
+        updateCalculations(val);
+      });
+    });
+
+    amountInput.addEventListener('input', (e) => {
+      const raw = e.target.value.replace(/[^0-9]/g, '');
+      if (raw) {
+        e.target.value = parseInt(raw).toLocaleString('en-IN');
+        updateCalculations(raw);
+      } else {
+        e.target.value = '0';
+        updateCalculations(0);
+      }
+    });
+
+    // Tab switcher toggle
+    tabBuy.addEventListener('click', () => {
+      currentMode = 'buy';
+      tabBuy.className = 'py-2 rounded font-label-sm text-label-sm bg-surface text-primary font-bold shadow-sm transition-all flex items-center justify-center gap-1.5';
+      tabSell.className = 'py-2 rounded font-label-sm text-label-sm text-text-secondary font-medium hover:text-text-primary transition-all flex items-center justify-center gap-1.5';
+      document.getElementById('entry-helper-label').textContent = 'Enter Purchase Amount';
+      updateCalculations(amountInput.value);
+    });
+
+    tabSell.addEventListener('click', () => {
+      currentMode = 'sell';
+      tabSell.className = 'py-2 rounded font-label-sm text-label-sm bg-surface text-primary font-bold shadow-sm transition-all flex items-center justify-center gap-1.5';
+      tabBuy.className = 'py-2 rounded font-label-sm text-label-sm text-text-secondary font-medium hover:text-text-primary transition-all flex items-center justify-center gap-1.5';
+      document.getElementById('entry-helper-label').textContent = 'Enter Value to Liquidate';
+      updateCalculations(amountInput.value);
+    });
+
+    // Rate validity countdown simulator
+    let secondsLeft = 288;
+    setInterval(() => {
+      if (secondsLeft > 0) {
+        secondsLeft--;
+        const mins = String(Math.floor(secondsLeft / 60)).padStart(2, '0');
+        const secs = String(secondsLeft % 60).padStart(2, '0');
+        timerElement.textContent = mins + ':' + secs + 's lock';
+      } else {
+        secondsLeft = 300;
+      }
+    }, 1000);
+  })();
+</script></main></body></html>
